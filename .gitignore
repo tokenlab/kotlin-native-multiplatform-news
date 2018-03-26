@@ -115,8 +115,8 @@ Podfile.lock
 # Add this line if you want to avoid checking in source code from Carthage dependencies.
 # Carthage/Checkouts
 
-applications/ios/Calculator/Carthage
-applications/ios/Calculator/Carthage/Build
+applications/ios/NewsApp/Carthage
+applications/ios/NewsApp/Carthage/Checkouts
 
 # fastlane
 #

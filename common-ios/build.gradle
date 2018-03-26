@@ -1,0 +1,15 @@
+
+apply plugin: 'konan'
+
+konanArtifacts {
+    framework('Common', targets: ['iphone', 'iphone_sim']) {
+        srcDir 'src/main/kotlin'
+
+        enableDebug true
+        enableMultiplatform true
+    }
+}
+
+dependencies {
+    expectedBy project(':common')
+}

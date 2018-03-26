@@ -9,7 +9,7 @@ class ArticleRepository(
 
 ) : ArticleDataSource {
 
-    override fun loadTopArticles(apiKey: String, country: String, category: String, complete: (List<Article>) -> Unit, fail: () -> Unit) {
-        remoteDataSource.loadTopArticles(apiKey, country, category, complete, fail)
+    override fun loadTopArticles(country: String, category: String, complete: (List<Article>) -> Unit, fail: () -> Unit) {
+        remoteDataSource.loadTopArticles(country, category, complete, fail)
     }
 }
