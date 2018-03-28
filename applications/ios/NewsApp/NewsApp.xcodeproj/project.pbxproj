@@ -71,6 +71,8 @@
 		9E35F182206BC61C006FAA17 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9E35F16C206BC61B006FAA17 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9E35F18A206BC662006FAA17 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E35F16C206BC61B006FAA17 /* Domain.framework */; };
 		9E35F18B206BC669006FAA17 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E35F16C206BC61B006FAA17 /* Domain.framework */; };
+		9E35F18E206BD4DD006FAA17 /* Common+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E35F18D206BD4DD006FAA17 /* Common+Utils.swift */; };
+		9E35F190206BD527006FAA17 /* RxSwift+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E35F18F206BD527006FAA17 /* RxSwift+Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -233,6 +235,8 @@
 		9E35F174206BC61B006FAA17 /* DomainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E35F17B206BC61C006FAA17 /* DomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainTests.swift; sourceTree = "<group>"; };
 		9E35F17D206BC61C006FAA17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E35F18D206BD4DD006FAA17 /* Common+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Common+Utils.swift"; sourceTree = "<group>"; };
+		9E35F18F206BD527006FAA17 /* RxSwift+Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RxSwift+Common.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -433,6 +437,7 @@
 		8342D2E6206941EC0081A200 /* Store */ = {
 			isa = PBXGroup;
 			children = (
+				9E35F18C206BD4A4006FAA17 /* Utils */,
 				8342D317206942C90081A200 /* Dependency Injection */,
 				8342D31C206942F90081A200 /* Data Source */,
 				8342D31D206943020081A200 /* Target */,
@@ -577,6 +582,15 @@
 				9E35F17D206BC61C006FAA17 /* Info.plist */,
 			);
 			path = DomainTests;
+			sourceTree = "<group>";
+		};
+		9E35F18C206BD4A4006FAA17 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9E35F18D206BD4DD006FAA17 /* Common+Utils.swift */,
+				9E35F18F206BD527006FAA17 /* RxSwift+Common.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1035,7 +1049,9 @@
 				8342D323206943430081A200 /* ArticleDataSource.swift in Sources */,
 				8342D325206943AE0081A200 /* ArticleTarget.swift in Sources */,
 				8342D319206942E00081A200 /* DataSource.swift in Sources */,
+				9E35F190206BD527006FAA17 /* RxSwift+Common.swift in Sources */,
 				8342D327206946240081A200 /* ArticleMapper.swift in Sources */,
+				9E35F18E206BD4DD006FAA17 /* Common+Utils.swift in Sources */,
 				8342D31B206942E80081A200 /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

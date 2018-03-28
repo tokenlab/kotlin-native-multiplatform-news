@@ -27,11 +27,7 @@ extension ArticleDataSource: CommonArticleDataSource {
         
         provider.rx.request(.topArticles(country: country, category: category))
             .map([ArticleResponse].self, atKeyPath: "articles", using: JSONDecoder(), failsOnEmptyData: false)
-            .map { (list) -> [CommonArticle] in
-                return list.map({ $0.toArticle() })
-            }
-            .subscribe(onSuccess: { let _ = complete($0) },
-                       onError: { error in let _ = fail() })
-            .disposed(by: disposeBag)
+            .map({ $0 as [CommonArticle] })
+            .handle(onSuccess: complete, onError: fail, disposeBag: disposeBag)
     }
 }

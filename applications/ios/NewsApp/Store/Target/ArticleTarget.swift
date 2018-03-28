@@ -23,13 +23,13 @@ extension ArticleTarget: TargetType {
     
     var path: String {
         switch self {
-        case .topArticles(_, _): return "top-headlines"
+        case .topArticles: return "top-headlines"
         }
     }
     
     var method: Moya.Method {
         switch self {
-        case .topArticles(_, _): return .get
+        case .topArticles: return .get
         }
     }
     
