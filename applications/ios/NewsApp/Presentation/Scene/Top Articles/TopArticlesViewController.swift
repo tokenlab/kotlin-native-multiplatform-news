@@ -24,7 +24,7 @@ class TopArticlesViewController: BaseViewController {
         super.viewDidLoad()
         title = "News"
         
-        presenter.takeView(view: self)
+        presenter.takeView(view_: self)
         setupTableView()
         
         let request = CommonGetTopArticlesRequest(country: "us", category: "business")

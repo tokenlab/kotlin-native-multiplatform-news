@@ -16,5 +16,9 @@ public enum Domain {
         container.register(CommonGetTopArticlesUseCase.self) { r in
             CommonGetTopArticlesUseCase(articleDataSource: r.resolve(CommonArticleDataSource.self)!)
         }
+        
+        container.register(CommonSumUseCase.self) { _ in
+            CommonSumUseCase()
+        }
     }
 }

@@ -1,7 +1,6 @@
 package br.com.tokenlab.presentation.presenter
 
 import br.com.tokenlab.domain.usecase.common.GetTopArticlesRequest
-import br.com.tokenlab.domain.usecase.common.GetTopArticlesResponse
 import br.com.tokenlab.domain.usecase.common.GetTopArticlesUseCase
 import br.com.tokenlab.domain.usecase.common.UseCaseHandler
 import br.com.tokenlab.presentation.contract.TopArticlesPresenterProtocol

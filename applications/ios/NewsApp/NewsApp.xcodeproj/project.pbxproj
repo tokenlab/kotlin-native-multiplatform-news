@@ -64,6 +64,11 @@
 		8342D355206AC1420081A200 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8342D354206AC1420081A200 /* LoadingView.swift */; };
 		8342D357206AC1F60081A200 /* PureLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8342D356206AC1F60081A200 /* PureLayout.framework */; };
 		8342D359206AC9A20081A200 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8342D358206AC9A20081A200 /* BaseViewController.swift */; };
+		8342D35D206C42290081A200 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8342D35B206C42290081A200 /* CalculatorViewController.swift */; };
+		8342D35E206C42290081A200 /* CalculatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8342D35C206C42290081A200 /* CalculatorViewController.xib */; };
+		8342D365206C437D0081A200 /* CalculatorConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8342D364206C437D0081A200 /* CalculatorConfigurator.swift */; };
+		8342D36C206C45C30081A200 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8342D36A206C45C30081A200 /* HomeViewController.swift */; };
+		8342D36D206C45C30081A200 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8342D36B206C45C30081A200 /* HomeViewController.xib */; };
 		9E35F175206BC61C006FAA17 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E35F16C206BC61B006FAA17 /* Domain.framework */; };
 		9E35F17C206BC61C006FAA17 /* DomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E35F17B206BC61C006FAA17 /* DomainTests.swift */; };
 		9E35F17E206BC61C006FAA17 /* Domain.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E35F16E206BC61B006FAA17 /* Domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -229,6 +234,11 @@
 		8342D354206AC1420081A200 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		8342D356206AC1F60081A200 /* PureLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PureLayout.framework; path = Carthage/Build/iOS/PureLayout.framework; sourceTree = "<group>"; };
 		8342D358206AC9A20081A200 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		8342D35B206C42290081A200 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		8342D35C206C42290081A200 /* CalculatorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalculatorViewController.xib; sourceTree = "<group>"; };
+		8342D364206C437D0081A200 /* CalculatorConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorConfigurator.swift; sourceTree = "<group>"; };
+		8342D36A206C45C30081A200 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8342D36B206C45C30081A200 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		9E35F16C206BC61B006FAA17 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E35F16E206BC61B006FAA17 /* Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
 		9E35F16F206BC61B006FAA17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -501,6 +511,8 @@
 		8342D3292069528B0081A200 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				8342D35F206C42860081A200 /* Home */,
+				8342D35A206C420F0081A200 /* Calculator */,
 				8342D32A206952900081A200 /* Top Articles */,
 			);
 			path = Scene;
@@ -564,6 +576,25 @@
 				8342D34620696F400081A200 /* LoadingProtocol.swift */,
 			);
 			path = Loading;
+			sourceTree = "<group>";
+		};
+		8342D35A206C420F0081A200 /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				8342D364206C437D0081A200 /* CalculatorConfigurator.swift */,
+				8342D35B206C42290081A200 /* CalculatorViewController.swift */,
+				8342D35C206C42290081A200 /* CalculatorViewController.xib */,
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
+		8342D35F206C42860081A200 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8342D36A206C45C30081A200 /* HomeViewController.swift */,
+				8342D36B206C45C30081A200 /* HomeViewController.xib */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		9E35F16D206BC61B006FAA17 /* Domain */ = {
@@ -903,7 +934,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8342D36D206C45C30081A200 /* HomeViewController.xib in Resources */,
 				8342D341206965150081A200 /* ArticleTableViewCell.xib in Resources */,
+				8342D35E206C42290081A200 /* CalculatorViewController.xib in Resources */,
 				8342D334206952D90081A200 /* TopArticlesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1022,14 +1055,17 @@
 				8342D32C206952A90081A200 /* Scene.swift in Sources */,
 				8342D34520696D480081A200 /* TopArticlesMapper.swift in Sources */,
 				8342D34320696D1C0081A200 /* TopArticlesModels.swift in Sources */,
+				8342D365206C437D0081A200 /* CalculatorConfigurator.swift in Sources */,
 				8342D34720696F400081A200 /* LoadingProtocol.swift in Sources */,
 				8342D34E206A9CDA0081A200 /* NibLoadable.swift in Sources */,
 				8342D355206AC1420081A200 /* LoadingView.swift in Sources */,
+				8342D36C206C45C30081A200 /* HomeViewController.swift in Sources */,
 				8342D330206952CC0081A200 /* TopArticlesRouter.swift in Sources */,
 				8342D32E206952C50081A200 /* TopArticlesConfigurator.swift in Sources */,
 				8342D340206965150081A200 /* ArticleTableViewCell.swift in Sources */,
 				8342D333206952D90081A200 /* TopArticlesViewController.swift in Sources */,
 				8342D352206ABB330081A200 /* NibLoadableViewController.swift in Sources */,
+				8342D35D206C42290081A200 /* CalculatorViewController.swift in Sources */,
 				8342D34C206A9B5F0081A200 /* Article+ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,8 +8,8 @@ import br.com.tokenlab.presentation.common.ViewProtocol
 interface TopArticlesPresenterProtocol : PresenterProtocol {
 
     fun takeView(view: TopArticlesViewProtocol)
-    fun loadTopArticles(request: GetTopArticlesRequest)
     fun dropView()
+    fun loadTopArticles(request: GetTopArticlesRequest)
 }
 
 interface TopArticlesViewProtocol : ViewProtocol {
