@@ -64,6 +64,13 @@
 		8342D355206AC1420081A200 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8342D354206AC1420081A200 /* LoadingView.swift */; };
 		8342D357206AC1F60081A200 /* PureLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8342D356206AC1F60081A200 /* PureLayout.framework */; };
 		8342D359206AC9A20081A200 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8342D358206AC9A20081A200 /* BaseViewController.swift */; };
+		9E35F175206BC61C006FAA17 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E35F16C206BC61B006FAA17 /* Domain.framework */; };
+		9E35F17C206BC61C006FAA17 /* DomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E35F17B206BC61C006FAA17 /* DomainTests.swift */; };
+		9E35F17E206BC61C006FAA17 /* Domain.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E35F16E206BC61B006FAA17 /* Domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E35F181206BC61C006FAA17 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E35F16C206BC61B006FAA17 /* Domain.framework */; };
+		9E35F182206BC61C006FAA17 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9E35F16C206BC61B006FAA17 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9E35F18A206BC662006FAA17 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E35F16C206BC61B006FAA17 /* Domain.framework */; };
+		9E35F18B206BC669006FAA17 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E35F16C206BC61B006FAA17 /* Domain.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +130,27 @@
 			remoteGlobalIDString = 8342D2E4206941EC0081A200;
 			remoteInfo = Store;
 		};
+		9E35F176206BC61C006FAA17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8342D24F20693DE00081A200 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E35F16B206BC61B006FAA17;
+			remoteInfo = Domain;
+		};
+		9E35F178206BC61C006FAA17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8342D24F20693DE00081A200 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8342D25620693DE00081A200;
+			remoteInfo = NewsApp;
+		};
+		9E35F17F206BC61C006FAA17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8342D24F20693DE00081A200 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E35F16B206BC61B006FAA17;
+			remoteInfo = Domain;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -132,6 +160,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				9E35F182206BC61C006FAA17 /* Domain.framework in Embed Frameworks */,
 				8342D2B7206941930081A200 /* Presentation.framework in Embed Frameworks */,
 				8342D28D206941010081A200 /* Common.framework in Embed Frameworks */,
 				8342D2FB206941ED0081A200 /* Store.framework in Embed Frameworks */,
@@ -198,6 +227,12 @@
 		8342D354206AC1420081A200 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		8342D356206AC1F60081A200 /* PureLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PureLayout.framework; path = Carthage/Build/iOS/PureLayout.framework; sourceTree = "<group>"; };
 		8342D358206AC9A20081A200 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		9E35F16C206BC61B006FAA17 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E35F16E206BC61B006FAA17 /* Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
+		9E35F16F206BC61B006FAA17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E35F174206BC61B006FAA17 /* DomainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E35F17B206BC61C006FAA17 /* DomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainTests.swift; sourceTree = "<group>"; };
+		9E35F17D206BC61C006FAA17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +240,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E35F181206BC61C006FAA17 /* Domain.framework in Frameworks */,
 				8342D304206942150081A200 /* Swinject.framework in Frameworks */,
 				8342D305206942150081A200 /* SwinjectAutoregistration.framework in Frameworks */,
 				8342D2B6206941930081A200 /* Presentation.framework in Frameworks */,
@@ -231,6 +267,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E35F18A206BC662006FAA17 /* Domain.framework in Frameworks */,
 				8342D357206AC1F60081A200 /* PureLayout.framework in Frameworks */,
 				8342D3202069432C0081A200 /* Common.framework in Frameworks */,
 				8342D316206942BD0081A200 /* RxCocoa.framework in Frameworks */,
@@ -253,6 +290,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E35F18B206BC669006FAA17 /* Domain.framework in Frameworks */,
 				8342D321206943360081A200 /* Common.framework in Frameworks */,
 				8342D30D2069429D0081A200 /* Alamofire.framework in Frameworks */,
 				8342D30E2069429D0081A200 /* Moya.framework in Frameworks */,
@@ -271,6 +309,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9E35F168206BC61B006FAA17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E35F171206BC61B006FAA17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E35F175206BC61C006FAA17 /* Domain.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -284,6 +337,8 @@
 				8342D26E20693DE10081A200 /* NewsAppTests */,
 				8342D27920693DE10081A200 /* NewsAppUITests */,
 				8342D2F3206941ED0081A200 /* StoreTests */,
+				9E35F16D206BC61B006FAA17 /* Domain */,
+				9E35F17A206BC61C006FAA17 /* DomainTests */,
 				8342D25820693DE00081A200 /* Products */,
 				8342D289206940FD0081A200 /* Frameworks */,
 			);
@@ -299,6 +354,8 @@
 				8342D2A9206941930081A200 /* PresentationTests.xctest */,
 				8342D2E5206941EC0081A200 /* Store.framework */,
 				8342D2ED206941ED0081A200 /* StoreTests.xctest */,
+				9E35F16C206BC61B006FAA17 /* Domain.framework */,
+				9E35F174206BC61B006FAA17 /* DomainTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -504,6 +561,24 @@
 			path = Loading;
 			sourceTree = "<group>";
 		};
+		9E35F16D206BC61B006FAA17 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				9E35F16E206BC61B006FAA17 /* Domain.h */,
+				9E35F16F206BC61B006FAA17 /* Info.plist */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		9E35F17A206BC61C006FAA17 /* DomainTests */ = {
+			isa = PBXGroup;
+			children = (
+				9E35F17B206BC61C006FAA17 /* DomainTests.swift */,
+				9E35F17D206BC61C006FAA17 /* Info.plist */,
+			);
+			path = DomainTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -523,6 +598,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9E35F169206BC61B006FAA17 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E35F17E206BC61C006FAA17 /* Domain.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -530,7 +613,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8342D27F20693DE10081A200 /* Build configuration list for PBXNativeTarget "NewsApp" */;
 			buildPhases = (
-				8342D288206940BA0081A200 /* Run Script - Compile Kotlin Native to iOS framework */,
 				8342D25320693DE00081A200 /* Sources */,
 				8342D25420693DE00081A200 /* Frameworks */,
 				8342D25520693DE00081A200 /* Resources */,
@@ -542,6 +624,7 @@
 			dependencies = (
 				8342D2B5206941930081A200 /* PBXTargetDependency */,
 				8342D2F9206941ED0081A200 /* PBXTargetDependency */,
+				9E35F180206BC61C006FAA17 /* PBXTargetDependency */,
 			);
 			name = NewsApp;
 			productName = NewsApp;
@@ -658,6 +741,44 @@
 			productReference = 8342D2ED206941ED0081A200 /* StoreTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		9E35F16B206BC61B006FAA17 /* Domain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E35F183206BC61C006FAA17 /* Build configuration list for PBXNativeTarget "Domain" */;
+			buildPhases = (
+				9E35F189206BC62D006FAA17 /* Run Script - Compile Kotlin Native to iOS framework */,
+				9E35F167206BC61B006FAA17 /* Sources */,
+				9E35F168206BC61B006FAA17 /* Frameworks */,
+				9E35F169206BC61B006FAA17 /* Headers */,
+				9E35F16A206BC61B006FAA17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Domain;
+			productName = Domain;
+			productReference = 9E35F16C206BC61B006FAA17 /* Domain.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9E35F173206BC61B006FAA17 /* DomainTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E35F186206BC61C006FAA17 /* Build configuration list for PBXNativeTarget "DomainTests" */;
+			buildPhases = (
+				9E35F170206BC61B006FAA17 /* Sources */,
+				9E35F171206BC61B006FAA17 /* Frameworks */,
+				9E35F172206BC61B006FAA17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9E35F177206BC61C006FAA17 /* PBXTargetDependency */,
+				9E35F179206BC61C006FAA17 /* PBXTargetDependency */,
+			);
+			name = DomainTests;
+			productName = DomainTests;
+			productReference = 9E35F174206BC61B006FAA17 /* DomainTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -670,7 +791,7 @@
 				TargetAttributes = {
 					8342D25620693DE00081A200 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					8342D26A20693DE10081A200 = {
 						CreatedOnToolsVersion = 9.2;
@@ -702,6 +823,15 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 8342D25620693DE00081A200;
 					};
+					9E35F16B206BC61B006FAA17 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					9E35F173206BC61B006FAA17 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8342D25620693DE00081A200;
+					};
 				};
 			};
 			buildConfigurationList = 8342D25220693DE00081A200 /* Build configuration list for PBXProject "NewsApp" */;
@@ -724,6 +854,8 @@
 				8342D27520693DE10081A200 /* NewsAppUITests */,
 				8342D2A8206941930081A200 /* PresentationTests */,
 				8342D2EC206941ED0081A200 /* StoreTests */,
+				9E35F16B206BC61B006FAA17 /* Domain */,
+				9E35F173206BC61B006FAA17 /* DomainTests */,
 			);
 		};
 /* End PBXProject section */
@@ -783,23 +915,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		8342D288206940BA0081A200 /* Run Script - Compile Kotlin Native to iOS framework */ = {
-			isa = PBXShellScriptBuildPhase;
+		9E35F16A206BC61B006FAA17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-			);
-			name = "Run Script - Compile Kotlin Native to iOS framework";
-			outputPaths = (
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E35F172206BC61B006FAA17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "case \"$PLATFORM_NAME\" in\niphoneos)\nNAME=iphone\n;;\niphonesimulator)\nNAME=iphone_sim\n;;\n*)\necho \"Unknown platform: $PLATFORN_NAME\"\nexit 1\n;;\nesac\n\n\"$SRCROOT/../../../gradlew\" -p \"$SRCROOT/../../../common-ios\" \"build\"\nrm -rf \"$SRCROOT/build/\"\nmkdir \"$SRCROOT/build/\"\ncp -a \"$SRCROOT/../../../common-ios/build/konan/bin/$NAME/\" \"$SRCROOT/build/\"";
 		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
 		8342D306206942220081A200 /* Run Script - Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -823,6 +955,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		9E35F189206BC62D006FAA17 /* Run Script - Compile Kotlin Native to iOS framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script - Compile Kotlin Native to iOS framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "case \"$PLATFORM_NAME\" in\niphoneos)\nNAME=iphone\n;;\niphonesimulator)\nNAME=iphone_sim\n;;\n*)\necho \"Unknown platform: $PLATFORN_NAME\"\nexit 1\n;;\nesac\n\n\"$SRCROOT/../../../gradlew\" -p \"$SRCROOT/../../../common-ios\" \"build\"\nrm -rf \"$SRCROOT/build/\"\nmkdir \"$SRCROOT/build/\"\ncp -a \"$SRCROOT/../../../common-ios/build/konan/bin/$NAME/\" \"$SRCROOT/build/\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -902,6 +1048,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9E35F167206BC61B006FAA17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E35F170206BC61B006FAA17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E35F17C206BC61C006FAA17 /* DomainTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -944,6 +1105,21 @@
 			isa = PBXTargetDependency;
 			target = 8342D2E4206941EC0081A200 /* Store */;
 			targetProxy = 8342D2F8206941ED0081A200 /* PBXContainerItemProxy */;
+		};
+		9E35F177206BC61C006FAA17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9E35F16B206BC61B006FAA17 /* Domain */;
+			targetProxy = 9E35F176206BC61C006FAA17 /* PBXContainerItemProxy */;
+		};
+		9E35F179206BC61C006FAA17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8342D25620693DE00081A200 /* NewsApp */;
+			targetProxy = 9E35F178206BC61C006FAA17 /* PBXContainerItemProxy */;
+		};
+		9E35F180206BC61C006FAA17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9E35F16B206BC61B006FAA17 /* Domain */;
+			targetProxy = 9E35F17F206BC61C006FAA17 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1079,8 +1255,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BZ2LF24KZ7;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1091,6 +1267,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.tokenlab.NewsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1101,8 +1278,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BZ2LF24KZ7;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1113,6 +1290,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.tokenlab.NewsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1362,6 +1540,86 @@
 			};
 			name = Release;
 		};
+		9E35F184206BC61C006FAA17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Domain/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tokenlab.Domain;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9E35F185206BC61C006FAA17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Domain/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tokenlab.Domain;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9E35F187206BC61C006FAA17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4EZK9PR9TK;
+				INFOPLIST_FILE = DomainTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tokenlab.DomainTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NewsApp.app/NewsApp";
+			};
+			name = Debug;
+		};
+		9E35F188206BC61C006FAA17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4EZK9PR9TK;
+				INFOPLIST_FILE = DomainTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tokenlab.DomainTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NewsApp.app/NewsApp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1433,6 +1691,24 @@
 			buildConfigurations = (
 				8342D300206941ED0081A200 /* Debug */,
 				8342D301206941ED0081A200 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E35F183206BC61C006FAA17 /* Build configuration list for PBXNativeTarget "Domain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E35F184206BC61C006FAA17 /* Debug */,
+				9E35F185206BC61C006FAA17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E35F186206BC61C006FAA17 /* Build configuration list for PBXNativeTarget "DomainTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E35F187206BC61C006FAA17 /* Debug */,
+				9E35F188206BC61C006FAA17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
