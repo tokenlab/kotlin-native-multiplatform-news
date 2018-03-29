@@ -78,6 +78,7 @@
 		9E35F18B206BC669006FAA17 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E35F16C206BC61B006FAA17 /* Domain.framework */; };
 		9E35F18E206BD4DD006FAA17 /* Common+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E35F18D206BD4DD006FAA17 /* Common+Utils.swift */; };
 		9E35F190206BD527006FAA17 /* RxSwift+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E35F18F206BD527006FAA17 /* RxSwift+Common.swift */; };
+		9E953D34206D14BE00DBE2A4 /* HomeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E953D33206D14BE00DBE2A4 /* HomeConfigurator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -247,6 +248,7 @@
 		9E35F17D206BC61C006FAA17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E35F18D206BD4DD006FAA17 /* Common+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Common+Utils.swift"; sourceTree = "<group>"; };
 		9E35F18F206BD527006FAA17 /* RxSwift+Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RxSwift+Common.swift"; sourceTree = "<group>"; };
+		9E953D33206D14BE00DBE2A4 /* HomeConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeConfigurator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -593,6 +595,7 @@
 			children = (
 				8342D36A206C45C30081A200 /* HomeViewController.swift */,
 				8342D36B206C45C30081A200 /* HomeViewController.xib */,
+				9E953D33206D14BE00DBE2A4 /* HomeConfigurator.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -1056,6 +1059,7 @@
 				8342D34520696D480081A200 /* TopArticlesMapper.swift in Sources */,
 				8342D34320696D1C0081A200 /* TopArticlesModels.swift in Sources */,
 				8342D365206C437D0081A200 /* CalculatorConfigurator.swift in Sources */,
+				9E953D34206D14BE00DBE2A4 /* HomeConfigurator.swift in Sources */,
 				8342D34720696F400081A200 /* LoadingProtocol.swift in Sources */,
 				8342D34E206A9CDA0081A200 /* NibLoadable.swift in Sources */,
 				8342D355206AC1420081A200 /* LoadingView.swift in Sources */,

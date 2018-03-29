@@ -13,6 +13,7 @@ import RxSwift
 public enum Scene {
     public static func setup(with container: Container) {
         TopArticlesConfigurator.setup(with: container)
+        CalculatorConfigurator.setup(with: container)
     }
 }
 

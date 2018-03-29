@@ -7,51 +7,32 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
-class HomeViewController: BaseViewController {
+class HomeViewController: UIViewController {
+    
+    @IBOutlet var newsButton: UIButton!
+    @IBOutlet var calculatorButton: UIButton!
+    
+    let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-}
-
-// MARK: - Table view data source
-
-extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "featureCell") else { return UITableViewCell() }
         
-        switch indexPath.row {
-        case 0:
-            cell.textLabel?.text = "Calculator"
-        default:
-            cell.textLabel?.text = "News"
-        }
+        newsButton.rx.tap.asObservable()
+        .map({ TopArticlesConfigurator.viewController })
+        .bind(onNext: self.goToViewController)
+        .disposed(by: disposeBag)
         
-        return cell
+        calculatorButton.rx.tap.asObservable()
+            .map({ CalculatorConfigurator.viewController })
+            .bind(onNext: self.goToViewController)
+            .disposed(by: disposeBag)
+
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        switch indexPath.row {
-        case 0:
-            let viewController = CalculatorConfigurator.viewController
-            navigationController?.pushViewController(viewController, animated: true)
-        default:
-            let viewController = TopArticlesConfigurator.viewController
-            navigationController?.pushViewController(viewController, animated: true)
-        }
+    func goToViewController(_ viewController: UIViewController) {
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
 }

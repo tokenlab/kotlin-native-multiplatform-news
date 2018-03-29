@@ -8,6 +8,7 @@
 
 import UIKit
 import Swinject
+import SwinjectAutoregistration
 import Common
 
 public enum Domain {
@@ -17,8 +18,6 @@ public enum Domain {
             CommonGetTopArticlesUseCase(articleDataSource: r.resolve(CommonArticleDataSource.self)!)
         }
         
-        container.register(CommonSumUseCase.self) { _ in
-            CommonSumUseCase()
-        }
+        container.register(CommonSumUseCase.self) { _ in CommonSumUseCase() }
     }
 }

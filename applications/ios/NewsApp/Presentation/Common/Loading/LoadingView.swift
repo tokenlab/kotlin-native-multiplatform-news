@@ -12,7 +12,7 @@ import PureLayout
 class LoadingView: UIView {
 
     fileprivate lazy var indicator: UIActivityIndicatorView = {
-        let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .white)
+        let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .gray)
         activityIndicator.startAnimating()
         return activityIndicator
     }()
@@ -20,8 +20,6 @@ class LoadingView: UIView {
     convenience init(superView: UIView, style: UIActivityIndicatorViewStyle) {
         self.init(frame: superView.bounds)
         
-        self.backgroundColor = UIColor(white: 0.0, alpha: 0.70)
-
         self.addSubview(indicator)
         indicator.translatesAutoresizingMaskIntoConstraints = false
         indicator.autoCenterInSuperview()
