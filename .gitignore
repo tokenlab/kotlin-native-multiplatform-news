@@ -55,8 +55,6 @@ freeline/
 freeline_project_description.json
 
 
-
-
 # Xcode
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
@@ -108,7 +106,7 @@ playground.xcworkspace
 # https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
 #
 Pods/
-Podfile.lock
+# Podfile.lock
 
 # Carthage
 #

@@ -2,12 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../Presentation/Scene/Home/HomeTableViewController.swift">
-   </FileRef>
-   <FileRef
-      location = "group:../Presentation/Scene/Home/HomeTableViewController.xib">
-   </FileRef>
-   <FileRef
-      location = "self:NewsApp.xcodeproj">
+      location = "self:">
    </FileRef>
 </Workspace>
