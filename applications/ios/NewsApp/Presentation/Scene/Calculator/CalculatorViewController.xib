@@ -23,35 +23,35 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="wVg-qf-0Y0">
-                    <rect key="frame" x="30" y="227" width="315" height="214"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="wVg-qf-0Y0">
+                    <rect key="frame" x="50" y="70" width="275" height="237.5"/>
                     <subviews>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bK6-RO-XrR">
-                            <rect key="frame" x="0.0" y="0.0" width="315" height="35"/>
+                            <rect key="frame" x="0.0" y="0.0" width="275" height="35"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="35" id="OR6-uT-r2m"/>
                             </constraints>
                             <nil key="textColor"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
                             <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
                         </textField>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QCK-ge-IXn">
-                            <rect key="frame" x="0.0" y="50" width="315" height="25.5"/>
+                            <rect key="frame" x="0.0" y="55" width="275" height="25.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="21"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Second number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YhO-lp-gC7">
-                            <rect key="frame" x="0.0" y="90.5" width="315" height="35"/>
+                            <rect key="frame" x="0.0" y="100.5" width="275" height="35"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="35" id="K4o-63-hc0"/>
                             </constraints>
                             <nil key="textColor"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
                             <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
                         </textField>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aOR-NJ-R9l">
-                            <rect key="frame" x="0.0" y="140.5" width="315" height="38"/>
+                            <rect key="frame" x="0.0" y="155.5" width="275" height="38"/>
                             <color key="backgroundColor" red="0.32793511284722221" green="0.495849609375" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" type="system" pointSize="21"/>
                             <state key="normal" title="=">
@@ -61,9 +61,9 @@
                                 <action selector="calculateButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="LUR-C3-uz4"/>
                             </connections>
                         </button>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0FX-vx-mid">
-                            <rect key="frame" x="0.0" y="193.5" width="315" height="20.5"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0FX-vx-mid">
+                            <rect key="frame" x="0.0" y="213.5" width="275" height="24"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -72,9 +72,9 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="wVg-qf-0Y0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="2Ap-EM-Te1"/>
+                <constraint firstItem="wVg-qf-0Y0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="2Ap-EM-Te1"/>
+                <constraint firstItem="wVg-qf-0Y0" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="4Kl-gR-Khj"/>
                 <constraint firstItem="wVg-qf-0Y0" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="VvH-2Y-DTC"/>
-                <constraint firstItem="wVg-qf-0Y0" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="nbh-nd-eWx"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>

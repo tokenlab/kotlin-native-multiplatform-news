@@ -22,11 +22,11 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="7bc-e7-LtK">
-                    <rect key="frame" x="16" y="256.5" width="343" height="154"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="7bc-e7-LtK">
+                    <rect key="frame" x="45" y="273.5" width="285" height="120"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GwG-hQ-7BQ">
-                            <rect key="frame" x="0.0" y="0.0" width="343" height="45"/>
+                            <rect key="frame" x="0.0" y="0.0" width="285" height="45"/>
                             <color key="backgroundColor" red="0.32793511279999998" green="0.4958496094" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="45" id="ZwY-kX-6VK"/>
@@ -36,7 +36,7 @@
                             </state>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fc7-6f-3YT">
-                            <rect key="frame" x="0.0" y="109" width="343" height="45"/>
+                            <rect key="frame" x="0.0" y="75" width="285" height="45"/>
                             <color key="backgroundColor" red="0.32793511279999998" green="0.4958496094" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="45" id="378-kS-h6Q"/>
@@ -50,8 +50,8 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="7bc-e7-LtK" firstAttribute="leading" secondItem="KQL-iG-jc7" secondAttribute="leading" constant="16" id="0TV-kS-Gm1"/>
-                <constraint firstItem="KQL-iG-jc7" firstAttribute="trailing" secondItem="7bc-e7-LtK" secondAttribute="trailing" constant="16" id="5W2-uw-Reu"/>
+                <constraint firstItem="7bc-e7-LtK" firstAttribute="leading" secondItem="KQL-iG-jc7" secondAttribute="leading" constant="45" id="0TV-kS-Gm1"/>
+                <constraint firstItem="7bc-e7-LtK" firstAttribute="centerX" secondItem="DXy-Qa-fVH" secondAttribute="centerX" id="bDd-rg-bOC"/>
                 <constraint firstItem="7bc-e7-LtK" firstAttribute="centerY" secondItem="DXy-Qa-fVH" secondAttribute="centerY" id="xja-Jq-fWG"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="KQL-iG-jc7"/>

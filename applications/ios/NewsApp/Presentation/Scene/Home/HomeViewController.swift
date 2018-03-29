@@ -19,6 +19,7 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Home"
         
         newsButton.rx.tap.asObservable()
         .map({ TopArticlesConfigurator.viewController })

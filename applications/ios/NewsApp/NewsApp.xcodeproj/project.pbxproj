@@ -593,9 +593,9 @@
 		8342D35F206C42860081A200 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				9E953D33206D14BE00DBE2A4 /* HomeConfigurator.swift */,
 				8342D36A206C45C30081A200 /* HomeViewController.swift */,
 				8342D36B206C45C30081A200 /* HomeViewController.xib */,
-				9E953D33206D14BE00DBE2A4 /* HomeConfigurator.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -839,7 +839,7 @@
 				TargetAttributes = {
 					8342D25620693DE00081A200 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 					8342D26A20693DE10081A200 = {
 						CreatedOnToolsVersion = 9.2;
@@ -1311,8 +1311,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BZ2LF24KZ7;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1334,8 +1335,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BZ2LF24KZ7;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
