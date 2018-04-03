@@ -4,9 +4,9 @@ import br.com.tokenlab.domain.usecase.common.UseCase
 import br.com.tokenlab.domain.usecase.common.UseCaseRequest
 import br.com.tokenlab.domain.usecase.common.UseCaseResponse
 
-class SumUseCaseRequest(val x: Float, val y: Float) : UseCaseRequest
+class SumUseCaseRequest(val x: Double, val y: Double) : UseCaseRequest
 
-class SumUseCaseResponse(val result: Float) : UseCaseResponse
+class SumUseCaseResponse(val result: Double) : UseCaseResponse
 
 class SumUseCase() : UseCase<SumUseCaseRequest, SumUseCaseResponse>() {
 

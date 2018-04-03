@@ -12,5 +12,5 @@ interface CalculatorPresenterProtocol : PresenterProtocol {
 
 interface CalculatorViewProtocol : ViewProtocol {
 
-    fun showResult(result: Float)
+    fun showResult(result: Double)
 }

@@ -36,7 +36,7 @@ Dependency Injection for all artifacts (including shared ones) is delegated to e
 
 ### iOS project
 
-The directory ``` applications/ios/NewsApp``` contains the iOS project.   
+The directory ``` applications/ios/KotlinDemoApp``` contains the iOS project.   
 
 Run Carthage command to download all iOS dependencies:
 
@@ -44,6 +44,6 @@ Run Carthage command to download all iOS dependencies:
   carthage bootstrap --no-use-binaries --platform iOS
 ```
 
-After that, open ```NewsApp.xcodeproj ``` and build the project.
+After that, open ```KotlinDemoApp.xcodeproj ``` and build the project.
 
 There is a script in Build Phases that build common Kotlin code generates the ```Common.framework``` that is embedded in the iOS project.

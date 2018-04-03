@@ -113,8 +113,7 @@ Pods/
 # Add this line if you want to avoid checking in source code from Carthage dependencies.
 # Carthage/Checkouts
 
-applications/ios/NewsApp/Carthage
-applications/ios/NewsApp/Carthage/Checkouts
+applications/ios/KotlinDemoApp/Carthage
 
 # fastlane
 #
