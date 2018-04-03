@@ -1,6 +1,4 @@
-# Kotlin-native-multiplatform
-
-## Description
+# Kotlin Native Multiplatform
 
 This is an example of multiplatform Kotlin/Native project. The whole business logic is written in Kotlin and shared between iOS and Android apps.
 

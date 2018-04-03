@@ -15,8 +15,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        // Setup dependency injection
         Configuration.setup()
         
+        // Setup window to work with dependency injection
         window = UIWindow(frame: UIScreen.main.bounds)
         
         let rootViewController = HomeConfigurator.viewController
