@@ -16,7 +16,11 @@ public enum DataSource {
         container.register(MoyaProvider<ArticleTarget>.self) { _ in return MoyaProvider<ArticleTarget>() }
         
         container.register(CommonArticleDataSource.self, name: DataSource.Name.remote) { r in
-            return ArticleDataSource.init(provider: r.resolve(MoyaProvider<ArticleTarget>.self)!)
+            return ArticleRemoteDataSource.init(provider: r.resolve(MoyaProvider<ArticleTarget>.self)!)
+        }
+        
+        container.register(CommonArticleDataSource.self, name: DataSource.Name.local) { r in
+            return ArticleLocalDataSource()
         }
     }
 }

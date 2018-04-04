@@ -1,5 +1,5 @@
 //
-//  ArticleDatasource.swift
+//  ArticleRemoteDatasource.swift
 //  Store
 //
 //  Created by Daniele Boscolo on 26/03/18.
@@ -12,7 +12,7 @@ import Moya
 import RxMoya
 import RxSwift
 
-class ArticleDataSource: NSObject {
+class ArticleRemoteDataSource: NSObject {
     let provider: MoyaProvider<ArticleTarget>
     let disposeBag = DisposeBag()
     
@@ -21,7 +21,7 @@ class ArticleDataSource: NSObject {
     }
 }
 
-extension ArticleDataSource: CommonArticleDataSource {
+extension ArticleRemoteDataSource: CommonArticleDataSource {
     
     func loadTopArticles(country: String, category: String, complete: @escaping ([CommonArticle]) -> CommonStdlibUnit, fail: @escaping () -> CommonStdlibUnit) {
         
@@ -29,5 +29,9 @@ extension ArticleDataSource: CommonArticleDataSource {
             .map([ArticleResponse].self, atKeyPath: "articles", using: JSONDecoder(), failsOnEmptyData: false)
             .map({ $0 as [CommonArticle] })
             .handle(onSuccess: complete, onError: fail, disposeBag: disposeBag)
+    }
+    
+    func save(topArticles: [CommonArticle], complete: @escaping () -> CommonStdlibUnit, fail: @escaping () -> CommonStdlibUnit) {
+        // nothing to do
     }
 }
