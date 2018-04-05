@@ -17,6 +17,8 @@ enum ArticleTarget {
 }
 
 extension ArticleTarget: TargetType {
+    // https://newsapi.org/v2/top-headlines?apiKey=032be3c3d700450c90c5ae280dd06576&country=us
+    
     var apiKey: String { return "032be3c3d700450c90c5ae280dd06576" }
     
     var baseURL: URL { return URL(string: "https://newsapi.org/v2/")! }

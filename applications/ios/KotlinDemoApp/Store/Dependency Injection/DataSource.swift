@@ -11,21 +11,21 @@ import SwinjectAutoregistration
 import Moya
 import Common
 
-public enum DataSource {
+public enum StoreDataSource {
     public static func setup(with container: Container) {
         container.register(MoyaProvider<ArticleTarget>.self) { _ in return MoyaProvider<ArticleTarget>() }
         
-        container.register(CommonArticleDataSource.self, name: DataSource.Name.remote) { r in
+        container.register(CommonArticleDataSource.self, name: StoreDataSource.Name.remote) { r in
             return ArticleRemoteDataSource.init(provider: r.resolve(MoyaProvider<ArticleTarget>.self)!)
         }
         
-        container.register(CommonArticleDataSource.self, name: DataSource.Name.local) { r in
+        container.register(CommonArticleDataSource.self, name: StoreDataSource.Name.local) { r in
             return ArticleLocalDataSource()
         }
     }
 }
 
-extension DataSource {
+extension StoreDataSource {
     enum Name {
         static let remote = "remote"
         static let local = "local"

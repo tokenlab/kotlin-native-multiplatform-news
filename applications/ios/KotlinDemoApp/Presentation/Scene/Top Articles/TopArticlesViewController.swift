@@ -18,6 +18,12 @@ class TopArticlesViewController: BaseViewController {
     
     var presenter: CommonTopArticlesPresenterProtocol!
     
+    lazy var refreshControl: UIRefreshControl = {
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(handleRefresh(_:)), for: UIControlEvents.valueChanged)
+        return refreshControl
+    }()
+
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -26,9 +32,7 @@ class TopArticlesViewController: BaseViewController {
         
         presenter.takeView(view_: self)
         setupTableView()
-        
-        let request = CommonGetTopArticlesRequest(country: "us", category: "business")
-        presenter.loadTopArticles(request: request)
+        requestTopArticles()
     }
     
     override func didReceiveMemoryWarning() {
@@ -39,24 +43,41 @@ class TopArticlesViewController: BaseViewController {
         tableView.register(ArticleTableViewCell.nib, forCellReuseIdentifier: ArticleTableViewCell.identifier)
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.backgroundView = self.refreshControl
+    }
+    
+    @objc func handleRefresh(_ refreshControl: UIRefreshControl) {
+        requestTopArticles()
+    }
+    
+    func requestTopArticles() {
+        let request = CommonGetTopArticlesRequest(country: "us", category: "business")
+        presenter.getTopArticles(request: request)
     }
 }
 
 extension TopArticlesViewController: CommonTopArticlesViewProtocol {
-    func showLoading() {
-        showFullScreenLoading()
+    func displayLoadingTopArticles() {
+        if items.isEmpty {
+            showFullScreenLoading()
+        }
     }
     
-    func hideLoading() {
+    func hideLoadingTopArticles() {
         hideFullScreenLoading()
+        refreshControl.endRefreshing()
     }
     
-    func showTopArticles(articles: [CommonArticle]) {
+    func display(articles: [CommonArticle]) {
         items = articles.map({ TopArticlesModels.Article(article: $0) })
         tableView.reloadData()
     }
     
-    func showTopArticlesError(message: String) {
+    func displayEmptyArticles() {
+        print("displayEmptyArticles")
+    }
+    
+    func displayTopArticlesError(message: String) {
         let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
         alert.addAction(cancelAction)

@@ -16,7 +16,7 @@ public enum Configuration {
     
     public static func setup() {
         Domain.setup(container: container)
-        Store.DataSource.setup(with: container)
+        Store.StoreDataSource.setup(with: container)
         Store.Repository.setup(with: container)
         Presentation.Scene.setup(with: container)
     }

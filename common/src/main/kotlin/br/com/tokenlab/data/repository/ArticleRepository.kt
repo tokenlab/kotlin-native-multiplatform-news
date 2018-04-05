@@ -10,26 +10,20 @@ class ArticleRepository(
 
 ) : ArticleDataSource {
 
-    override fun loadTopArticles(country: String, category: String, complete: (List<Article>) -> Unit, fail: () -> Unit) {
+    override fun getTopArticles(country: String, category: String, complete: (List<Article>) -> Unit, fail: () -> Unit) {
 
-        localDataSource.loadTopArticles(country,category,{
+        remoteDataSource.getTopArticles(country, category, {
+
+            localDataSource.save(it, {}, {})
             complete(it)
 
-            remoteDataSource.loadTopArticles(country, category, {
-
-                localDataSource.save(it, {}, {})
-                complete(it)
-
-            }, fail)
         }, {
-            remoteDataSource.loadTopArticles(country, category, {
-
-                localDataSource.save(it, {}, {})
+            localDataSource.getTopArticles(country,category,{
                 complete(it)
-
-            }, fail)
+            }, {
+                fail()
+            })
         })
-
     }
 
     override fun save(topArticles: List<Article>, complete: () -> Unit, fail: () -> Unit) {

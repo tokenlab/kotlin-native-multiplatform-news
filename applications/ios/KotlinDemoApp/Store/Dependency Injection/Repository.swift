@@ -13,7 +13,7 @@ import Common
 public enum Repository {
     public static func setup(with container: Container) {
         container.register(CommonArticleDataSource.self) { r in
-            return CommonArticleRepository.init(remoteDataSource: r.resolve(CommonArticleDataSource.self, name: DataSource.Name.remote)!, localDataSource: r.resolve(CommonArticleDataSource.self, name: DataSource.Name.local)!)
+            return CommonArticleRepository.init(remoteDataSource: r.resolve(CommonArticleDataSource.self, name: StoreDataSource.Name.remote)!, localDataSource: r.resolve(CommonArticleDataSource.self, name: StoreDataSource.Name.local)!)
         }
     }
 }

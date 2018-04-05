@@ -10,7 +10,7 @@ class GetTopArticlesResponse(val articles: List<Article>) : UseCaseResponse
 class GetTopArticlesUseCase(private val articleDataSource: ArticleDataSource) : UseCase<GetTopArticlesRequest, GetTopArticlesResponse>() {
 
     override fun executeUseCase(request: GetTopArticlesRequest) {
-        articleDataSource.loadTopArticles(request.country, request.category, {
+        articleDataSource.getTopArticles(request.country, request.category, {
             val response = GetTopArticlesResponse(it)
             success(response)
         }, {

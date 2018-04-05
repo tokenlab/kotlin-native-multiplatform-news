@@ -9,13 +9,14 @@ interface TopArticlesPresenterProtocol : PresenterProtocol {
 
     fun takeView(view: TopArticlesViewProtocol)
     fun dropView()
-    fun loadTopArticles(request: GetTopArticlesRequest)
+    fun getTopArticles(request: GetTopArticlesRequest)
 }
 
 interface TopArticlesViewProtocol : ViewProtocol {
 
-    fun showLoading()
-    fun hideLoading()
-    fun showTopArticles(articles: List<Article>)
-    fun showTopArticlesError(message: String)
+    fun displayLoadingTopArticles()
+    fun hideLoadingTopArticles()
+    fun displayEmptyArticles()
+    fun display(articles: List<Article>)
+    fun displayTopArticlesError(message: String)
 }

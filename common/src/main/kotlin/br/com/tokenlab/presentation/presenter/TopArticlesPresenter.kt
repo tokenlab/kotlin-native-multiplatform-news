@@ -23,16 +23,21 @@ class TopArticlesPresenter(
         this.view = null
     }
 
-    override fun loadTopArticles(request: GetTopArticlesRequest) {
-
-        view?.showLoading()
+    override fun getTopArticles(request: GetTopArticlesRequest) {
+        view?.displayLoadingTopArticles()
 
         useCaseHandler.executeUseCase(getTopArticlesUseCase, request, {
-            view?.hideLoading()
-            view?.showTopArticles(it.articles)
+            view?.hideLoadingTopArticles()
+
+            if (it.articles.isEmpty()) {
+                view?.displayEmptyArticles()
+            } else {
+                view?.display(it.articles)
+            }
+
         }, {
-            view?.hideLoading()
-            view?.showTopArticlesError("Error loading top articles")
+            view?.hideLoadingTopArticles()
+            view?.displayTopArticlesError("Error loading top articles")
         })
     }
 }

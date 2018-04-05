@@ -16,6 +16,8 @@ class ArticleRemoteDataSource: NSObject {
     let provider: MoyaProvider<ArticleTarget>
     let disposeBag = DisposeBag()
     
+    var showError = false
+    
     init(provider: MoyaProvider<ArticleTarget>) {
         self.provider = provider
     }
@@ -23,10 +25,17 @@ class ArticleRemoteDataSource: NSObject {
 
 extension ArticleRemoteDataSource: CommonArticleDataSource {
     
-    func loadTopArticles(country: String, category: String, complete: @escaping ([CommonArticle]) -> CommonStdlibUnit, fail: @escaping () -> CommonStdlibUnit) {
+    func getTopArticles(country: String, category: String, complete: @escaping ([CommonArticle]) -> CommonStdlibUnit, fail: @escaping () -> CommonStdlibUnit) {
+        if showError {
+            showError = !showError
+            _ = fail()
+            return
+        }
         
+        showError = !showError
         provider.rx.request(.topArticles(country: country, category: category))
             .map([ArticleResponse].self, atKeyPath: "articles", using: JSONDecoder(), failsOnEmptyData: false)
+            .debug()
             .map({ $0 as [CommonArticle] })
             .handle(onSuccess: complete, onError: fail, disposeBag: disposeBag)
     }
