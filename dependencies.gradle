@@ -38,6 +38,8 @@ ext {
             kotlin_test_common         : ["org.jetbrains.kotlin:kotlin-test-common:$kotlin_version",
                                           "org.jetbrains.kotlin:kotlin-test-annotations-common:$kotlin_version"],
 
+            couchbase :                   "com.couchbase.lite:couchbase-lite-android:2.0.0-DB023",
+
             // JS
             kotlin_test_js             : ["org.jetbrains.kotlin:kotlin-test-js:$kotlin_version",
                                           "org.jetbrains.kotlin:kotlin-test:$kotlin_version"],

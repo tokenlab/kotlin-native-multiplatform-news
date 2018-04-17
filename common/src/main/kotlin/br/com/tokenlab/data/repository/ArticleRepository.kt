@@ -13,7 +13,6 @@ class ArticleRepository(
     override fun getTopArticles(country: String, category: String, complete: (List<Article>) -> Unit, fail: () -> Unit) {
 
         remoteDataSource.getTopArticles(country, category, {
-
             localDataSource.save(it, {}, {})
             complete(it)
 

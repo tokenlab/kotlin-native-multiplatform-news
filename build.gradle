@@ -14,6 +14,7 @@ allprojects {
             maven { url "http://dl.bintray.com/kotlin/kotlin-dev" }
             maven { url 'https://dl.bintray.com/kotlin/kotlin-eap' }
             maven { url "https://dl.bintray.com/jetbrains/kotlin-native-dependencies" }
+            maven { url "http://mobile.maven.couchbase.com/maven2/dev/" }
             jcenter()
             mavenCentral()
             mavenLocal()
@@ -39,8 +40,8 @@ allprojects {
         maven { url "http://dl.bintray.com/kotlin/kotlin-dev" }
         maven { url "http://dl.bintray.com/kotlinx/kotlinx" }
         maven { url "http://dl.bintray.com/hypnosphi/kotlin-wrappers" }
+        maven { url "http://mobile.maven.couchbase.com/maven2/dev/" }
         mavenCentral()
-
         jcenter()
     }
 }
