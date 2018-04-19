@@ -8,7 +8,6 @@
 
 import Foundation
 import Common
-import CouchbaseLite
 import CouchbaseLiteSwift
 
 class ArticleLocalDataSource: NSObject {
@@ -24,6 +23,7 @@ class ArticleLocalDataSource: NSObject {
 extension ArticleLocalDataSource: CommonArticleDataSource {
     
     func getTopArticles(country: String, category: String, complete: @escaping ([CommonArticle]) -> CommonStdlibUnit, fail: @escaping () -> CommonStdlibUnit) {
+        
         let query = QueryBuilder
             .select(SelectResult.all())
             .from(DataSource.database(database))
